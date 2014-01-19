@@ -1,0 +1,12 @@
+{
+    "name": "scullwm/swmcache-twig-extension",
+    "description": "Flat Cache with Twig",
+    "homepage": "https://github.com/ScullWM/SwmCache-Twig-Extension",
+    "require": {
+        "php": ">=5.3.2",
+        "twig/twig": "1.*"
+    },
+    "autoload": {
+        "psr-0": { "ScullWM\\Twig\\SwmCacheTwig\\": "src/" }
+    }
+}
