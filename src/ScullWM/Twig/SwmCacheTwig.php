@@ -1,6 +1,6 @@
 <?php
 
-namespace Swm\Twig;
+namespace ScullWM\Twig;
 
 use CacheProvider\FlatCacheProvider;
 

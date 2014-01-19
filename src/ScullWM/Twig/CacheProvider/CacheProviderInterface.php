@@ -1,6 +1,6 @@
 <?php
 
-namespace CacheProvider;
+namespace ScullWM\Twig\CacheProvider;
 
 interface CacheProviderInterface
 {

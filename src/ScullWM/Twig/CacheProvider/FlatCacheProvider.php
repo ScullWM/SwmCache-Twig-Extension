@@ -1,6 +1,6 @@
 <?php
 
-namespace CacheProvider;
+namespace ScullWM\Twig\CacheProvider;
 
 class FlatCacheProvider implements CacheProviderInterface {
 
