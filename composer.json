@@ -1,5 +1,5 @@
 {
-    "name": "ScullWM/SwmCache-Twig-Extension",
+    "name": "scullwm/swmcache-twig-extension",
     "description": "Flat Cache with Twig",
     "homepage": "https://github.com/ScullWM/SwmCache-Twig-Extension",
     "require": {
