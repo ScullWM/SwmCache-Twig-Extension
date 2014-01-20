@@ -1,5 +1,7 @@
 <?php
 
+namespace SwmCacheTwig\TokenParser;
+
 use SwmCacheTwig\Node\SwmCacheNode;
 
 class SwmCacheTokenParser extends \Twig_TokenParser implements \Twig_TokenParserInterface

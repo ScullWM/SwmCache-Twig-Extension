@@ -20,7 +20,7 @@ class SwmCacheTwig extends \Twig_Extension
     public function getTokenParsers()
     {
         return array(
-            new SwmCache(),
+            new SwmCacheTokenParser(),
         );
     }
 
