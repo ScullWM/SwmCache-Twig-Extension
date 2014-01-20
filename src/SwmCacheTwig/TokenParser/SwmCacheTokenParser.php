@@ -1,6 +1,6 @@
 <?php
 
-namespace ScullWM\Twig\TokenParser;
+namespace SwmCacheTwig\TokenParser;
 
 class SwmCacheTokenParser extends \Twig_TokenParser implements \Twig_TokenParserInterface
 {

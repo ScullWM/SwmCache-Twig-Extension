@@ -1,6 +1,6 @@
 <?php
 
-namespace ScullWM\Twig\Node;
+namespace SwmCacheTwig\Node;
 
 class SwmCacheNode extends \Twig_Node
 {
