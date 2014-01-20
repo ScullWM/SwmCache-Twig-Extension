@@ -7,6 +7,6 @@
         "twig/twig": "1.*"
     },
     "autoload": {
-        "psr-0": { "SwmCacheTwig": "src/" }
+        "psr-0": { "ScullWM": "src/" }
     }
 }

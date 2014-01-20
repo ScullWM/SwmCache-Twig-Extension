@@ -2,7 +2,8 @@
 
 namespace SwmCacheTwig\CacheProvider;
 
-class FlatCacheProvider implements CacheProviderInterface {
+//implements CacheProviderInterface 
+class FlatCacheProvider {
 
     public $cachePath;
 

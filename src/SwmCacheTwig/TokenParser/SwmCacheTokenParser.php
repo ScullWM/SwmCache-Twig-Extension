@@ -1,6 +1,6 @@
 <?php
 
-namespace SwmCacheTwig\TokenParser;
+use SwmCacheTwig\Node\SwmCacheNode;
 
 class SwmCacheTokenParser extends \Twig_TokenParser implements \Twig_TokenParserInterface
 {
@@ -25,6 +25,6 @@ class SwmCacheTokenParser extends \Twig_TokenParser implements \Twig_TokenParser
         $body = $this->parser->subparse(array($this, 'decideswmcacheEnd'), true);
         $stream->expect(\Twig_Token::BLOCK_END_TYPE);
 
-        return new CacheNode($annotation, $key, $body);
+        return new SwmCacheNode($annotation, $key, $body);
      }
 }
