@@ -6,6 +6,13 @@ use SwmCacheTwig\Node\SwmCacheNode;
 
 class SwmCacheTokenParser extends \Twig_TokenParser implements \Twig_TokenParserInterface
 {
+    /**
+     * How tag end
+     *
+     * @version  21-01-14
+     * @param  Twig_Token $token
+     * @return Twig_Token
+     */
     public function decideswmcacheEnd(\Twig_Token $token)
     {
         return $token->test('endswmcache');
