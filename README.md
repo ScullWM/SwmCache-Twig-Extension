@@ -1,5 +1,5 @@
 # SwmCache-Twig-Extension
-Twig cache extension that work whithout dependency.
+Flat Cache part of your content in Twig. Perfect to reduce render() gen time. Twig cache extension that work without dependency.
 
 [![Total Downloads](https://poser.pugx.org/scullwm/swmcache-twig-extension/downloads.png)](https://packagist.org/packages/scullwm/swmcache-twig-extension)
 
@@ -26,9 +26,10 @@ use SwmCacheTwig\SwmCacheTwig;
 $twig->addExtension(new SwmCacheTwig($app));
 ?>
 ```
-## Tests
+## How to use ?
 ```php
     {% set dateajd = "now"|date('d-m') %}
+    {# Here using today date, but it can be you very own var #}
     {% swmcache 'ephemeride' ' ~ dateajd ~ ' %}
         {{ render(url('page_ephemeride')) }}
     {% endswmcache %}
