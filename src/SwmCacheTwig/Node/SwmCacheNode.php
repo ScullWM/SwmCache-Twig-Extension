@@ -16,7 +16,7 @@ class SwmCacheNode extends \Twig_Node
         $compiler
             ->addDebugInfo($this)
             ->write("\$swmFlatCache = \$this->getEnvironment()->getExtension('Swm_Cache_extension')->getFlatCache(\$this->getEnvironment()->getCache());". PHP_EOL)
-            ->write("\$swmCacheEmpreinte = \$swmFlatCache->getEmpreinte('".$this->getAttribute('annotation')."".$this->getNode('key_info')->getAttribute('value')."');". PHP_EOL)
+            ->write("\$swmCacheEmpreinte = \$swmFlatCache->getEmpreinte('".$this->getAttribute('annotation')."','".$this->getNode('key_info')->getAttribute('value')."');". PHP_EOL)
             ->write("if(\$swmFlatCache->isCache(\$swmCacheEmpreinte)===false) {". PHP_EOL)
             ->indent()
                 ->write("ob_start();". PHP_EOL)

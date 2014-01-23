@@ -10,5 +10,5 @@ interface CacheProviderInterface
 
     public function isCache($empreinte);
 
-    public function getEmpreinte($str);
+    public function getEmpreinte($name, $indice);
 }
