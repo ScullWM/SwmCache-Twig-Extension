@@ -11,7 +11,7 @@ class FlatCacheProvider implements CacheProviderInterface  {
 
     public function __construct($cachePath)
     {
-        $this->cachePath = $cachePath.'/';
+        $this->cachePath = $cachePath.'/swmcache/';
     }
 
     /**
@@ -23,6 +23,7 @@ class FlatCacheProvider implements CacheProviderInterface  {
      */
     public function setCache($body, $empreinte)
     {
+        if(!file_exists($this->cachePath)) mkdir($this->cachePath);
         file_put_contents($this->cachePath.$empreinte.'.tmp', $body);
     }
 
