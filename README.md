@@ -23,7 +23,7 @@ The extension is installable via composer:
 use SwmCacheTwig\SwmCacheTwig;
 
 // Add Extension to Twig (here silex way)
-$twig->addExtension(new SwmCacheTwig($app));
+$twig->addExtension(new SwmCacheTwig());
 ?>
 ```
 ## How to use ?
