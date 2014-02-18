@@ -28,9 +28,7 @@ $twig->addExtension(new SwmCacheTwig($app));
 ```
 ## How to use ?
 ```php
-    {% set dateajd = "now"|date('d-m') %}
-    {# Here using today date, but it can be you very own var #}
-    {% swmcache 'ephemeride' ' ~ dateajd ~ ' %}
+    {% swmcache 'ephemeride' '3600' %}
         {{ render(url('page_ephemeride')) }}
     {% endswmcache %}
 ```
