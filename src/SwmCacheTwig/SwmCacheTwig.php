@@ -2,7 +2,7 @@
 
 namespace SwmCacheTwig;
 
-use SwmCacheTwig\CacheProvider\FlatCacheProvider;
+use SwmCacheTwig\CacheProvider\TimedFlatCacheProvider;
 use SwmCacheTwig\TokenParser\SwmCacheTokenParser;
 
 class SwmCacheTwig extends \Twig_Extension
